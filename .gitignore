@@ -1,0 +1,9 @@
+# não versionar segredos nem dados locais
+.env
+*.db
+__pycache__/
+*.pyc
+vouchers_export/
+data/
+excel_vba/
+.hermes/

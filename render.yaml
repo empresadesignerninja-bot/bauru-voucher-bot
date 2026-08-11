@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: bauru-voucher-bot
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false   # você preenche o token no painel do Render (não vai pro git)
+      - key: PYTHONUNBUFFERED
+        value: "1"
