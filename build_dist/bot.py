@@ -918,11 +918,4 @@ def main():
     app.run_polling(allowed_updates=["message", "callback_query"])
 
 if __name__ == "__main__":
-    import asyncio
-    # garante um event loop na thread principal (evita erro em Python 3.10+)
-    try:
-        asyncio.get_event_loop()
-    except RuntimeError:
-        asyncio.set_event_loop(asyncio.new_event_loop())
     main()
-

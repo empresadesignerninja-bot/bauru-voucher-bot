@@ -1,0 +1,7 @@
+python-telegram-bot>=21,<22
+segno
+opencv-python-headless
+fpdf2
+python-dotenv
+numpy
+Pillow
